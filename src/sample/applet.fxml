@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import jfxtras.scene.control.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="400.0" maxWidth="600.0" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" scaleShape="false" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <ScrollPane hbarPolicy="NEVER" hmax="0.0" pannable="true" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <content>
+            <GridPane fx:id="pane" prefHeight="400.0" prefWidth="585.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="493.0" minWidth="10.0" prefWidth="197.0" />
+                <ColumnConstraints halignment="LEFT" maxWidth="400.0" minWidth="10.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <ComboBox fx:id="store" onHidden="#storeHandler" prefHeight="25.0" prefWidth="390.0" promptText="Select Store" GridPane.columnIndex="1" />
+                  <TextField fx:id="firstName" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="390.0" promptText="First Name" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="lastName" alignment="CENTER" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="390.0" promptText="Last Name" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextField fx:id="address" alignment="CENTER" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="390.0" promptText="Address" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <TextField fx:id="city" alignment="CENTER" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="390.0" promptText="City" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <TextField fx:id="state" alignment="CENTER" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="390.0" promptText="State" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <TextField fx:id="zipcode" alignment="CENTER" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="390.0" promptText="Zip Code" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                  <TextField fx:id="phone" alignment="CENTER" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="390.0" promptText="Phone Number" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                  <TextField fx:id="email" alignment="CENTER" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="390.0" promptText="Email" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                  <LocalDateTimeTextField fx:id="date" maxHeight="1.7976931348623157E308" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="29.0" prefWidth="390.0" promptText="Ex. Feb 10, 2018 1:49:55 PM" translateX="-2.0" translateY="2.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="9" GridPane.valignment="CENTER" />
+                  <TextField fx:id="url" alignment="CENTER" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="390.0" promptText="URL" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                  <Button fx:id="submit" mnemonicParsing="false" onAction="#submitClicked" prefWidth="390.0" text="Submit" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+                  <Button fx:id="start" disable="true" mnemonicParsing="false" onAction="#startClicked" prefWidth="390.0" text="Start" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+                  <Label fx:id="error" textFill="RED" GridPane.columnIndex="1" GridPane.rowIndex="13" />
+               </children>
+            </GridPane>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>
